@@ -4,6 +4,8 @@ import '../lessons/lesson_list_screen.dart';
 import '../dsa/dsa_path_screen.dart';
 import '../projects/project_list_screen.dart';
 import '../profile/profile_screen.dart';
+import 'package:provider/provider.dart';
+import '../../main.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
