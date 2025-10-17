@@ -5,7 +5,7 @@ import '../../widgets/progress/level_badge.dart';
 import '../../models/user_model.dart';
 
 // Ensure that user_model.dart exports a 'User' class.
-class User {
+class MockUser {
   final String id;
   final String name;
   final String email;
@@ -19,7 +19,7 @@ class User {
   final List<String> completedProjects;
   final List<String> completedDSAProblems;
 
-  User({
+  MockUser({
     required this.id,
     required this.name,
     required this.email,
@@ -41,7 +41,7 @@ class DashboardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Mock user data - in a real app, this would come from a provider or state management
-    final User mockUser = User(
+    final MockUser mockUser = MockUser(
       id: '1',
       name: 'John Doe',
       email: 'john@example.com',
@@ -62,10 +62,8 @@ class DashboardScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications),
-            onPressed: () {
-              // TODO: Implement notifications
-            },
-          ),
+            onPressed: () {},
+          )
         ],
       ),
       body: SingleChildScrollView(

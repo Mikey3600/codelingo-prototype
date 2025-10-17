@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../widgets/progress/level_badge.dart';
 import '../../widgets/progress/streak_widget.dart';
-import '../../models/user_model.dart';
+import 'package:go_router/go_router.dart';
 // Ensure that user_model.dart defines a 'User' class.
 // If not, define the User class below or update the import path.
 
 // Temporary User class definition for error-free compilation
-class User {
+class MockUser {
   final String id;
   final String name;
   final String email;
@@ -20,7 +20,7 @@ class User {
   final List<String> completedProjects;
   final List<String> completedDSAProblems;
 
-  User({
+  MockUser({
     required this.id,
     required this.name,
     required this.email,
@@ -42,7 +42,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Mock user data - in a real app, this would come from a provider or state management
-    final User mockUser = User(
+    final MockUser mockUser = MockUser(
       id: '1',
       name: 'John Doe',
       email: 'john@example.com',
@@ -63,9 +63,7 @@ class ProfileScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () {
-              // TODO: Navigate to settings
-            },
+            onPressed: () => context.push('/settings'),
           ),
         ],
       ),
@@ -85,7 +83,7 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildProfileHeader(BuildContext context, User user) {
+  Widget _buildProfileHeader(BuildContext context, MockUser user) {
     return Container(
       padding: const EdgeInsets.all(24.0),
       decoration: BoxDecoration(
@@ -172,7 +170,7 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStatsSection(BuildContext context, User user) {
+  Widget _buildStatsSection(BuildContext context, MockUser user) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
       child: Column(

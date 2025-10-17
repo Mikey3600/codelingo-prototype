@@ -1,11 +1,11 @@
 {
-    "name": "codelingo",
-    "short_name": "codelingo",
+    "name": "CodeLingo",
+    "short_name": "CodeLingo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Interactive coding learning app with modern UI/UX.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
