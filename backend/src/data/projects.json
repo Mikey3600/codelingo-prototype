@@ -1,0 +1,162 @@
+[
+  {
+    "id": "todo-app-js",
+    "title": "Todo List Application",
+    "description": "Build a simple todo list application with JavaScript, HTML, and CSS. Learn about DOM manipulation, event handling, and local storage.",
+    "language": "javascript",
+    "level": "beginner",
+    "duration": 3,
+    "prerequisites": ["js-basics-1"],
+    "tags": ["web", "frontend", "DOM", "localStorage"],
+    "xpReward": 100,
+    "isLocked": false,
+    "steps": [
+      {
+        "title": "Setup HTML Structure",
+        "description": "Create the basic HTML structure for the todo list application with a form for adding new todos and a list to display them.",
+        "codeTemplate": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Todo List App</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <!-- Add your HTML structure here -->\n  \n  <script src=\"app.js\"></script>\n</body>\n</html>",
+        "expectedOutput": "A valid HTML structure with form elements for adding todos and a container for displaying the todo list."
+      },
+      {
+        "title": "Style the Application",
+        "description": "Add CSS styles to make the todo list application look good and be user-friendly.",
+        "codeTemplate": "/* Add your CSS styles here */\n\nbody {\n  font-family: Arial, sans-serif;\n}\n",
+        "expectedOutput": "CSS styles that make the application visually appealing and responsive."
+      },
+      {
+        "title": "Implement Todo Creation",
+        "description": "Write JavaScript code to add new todos when the form is submitted.",
+        "codeTemplate": "// Get DOM elements\n\n// Function to add a new todo\n\n// Event listener for form submission\n",
+        "expectedOutput": "JavaScript code that allows users to add new todos to the list."
+      },
+      {
+        "title": "Implement Todo Completion",
+        "description": "Add functionality to mark todos as completed.",
+        "codeTemplate": "// Function to toggle todo completion status\n\n// Event listener for todo item clicks\n",
+        "expectedOutput": "JavaScript code that allows users to mark todos as completed or uncompleted."
+      },
+      {
+        "title": "Implement Todo Deletion",
+        "description": "Add functionality to delete todos from the list.",
+        "codeTemplate": "// Function to delete a todo\n\n// Event listener for delete button clicks\n",
+        "expectedOutput": "JavaScript code that allows users to delete todos from the list."
+      },
+      {
+        "title": "Implement Local Storage",
+        "description": "Save todos to local storage so they persist when the page is refreshed.",
+        "codeTemplate": "// Function to save todos to local storage\n\n// Function to load todos from local storage\n\n// Call load function when the page loads\n",
+        "expectedOutput": "JavaScript code that saves todos to local storage and loads them when the page is refreshed."
+      }
+    ]
+  },
+  {
+    "id": "weather-app-js",
+    "title": "Weather Forecast App",
+    "description": "Build a weather forecast application using JavaScript and a weather API. Learn about API integration, asynchronous JavaScript, and data visualization.",
+    "language": "javascript",
+    "level": "intermediate",
+    "duration": 5,
+    "prerequisites": ["js-basics-1"],
+    "tags": ["web", "API", "async", "fetch"],
+    "xpReward": 150,
+    "isLocked": true,
+    "unlockRequirements": {
+      "lessonIds": ["js-basics-1"],
+      "minLevel": 3
+    },
+    "steps": [
+      {
+        "title": "Setup Project Structure",
+        "description": "Create the basic project structure with HTML, CSS, and JavaScript files.",
+        "codeTemplate": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Weather Forecast App</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <!-- Add your HTML structure here -->\n  \n  <script src=\"app.js\"></script>\n</body>\n</html>",
+        "expectedOutput": "A valid HTML structure with elements for searching locations and displaying weather information."
+      },
+      {
+        "title": "Style the Application",
+        "description": "Add CSS styles to make the weather app look good and be user-friendly.",
+        "codeTemplate": "/* Add your CSS styles here */\n\nbody {\n  font-family: Arial, sans-serif;\n}\n",
+        "expectedOutput": "CSS styles that make the application visually appealing and responsive."
+      },
+      {
+        "title": "Setup API Integration",
+        "description": "Register for a weather API and set up the basic fetch functionality.",
+        "codeTemplate": "// API configuration\nconst API_KEY = 'your_api_key';\nconst BASE_URL = 'https://api.example.com/weather';\n\n// Function to fetch weather data\nasync function fetchWeather(location) {\n  // Implement fetch logic here\n}\n",
+        "expectedOutput": "JavaScript code that successfully fetches weather data from an API."
+      },
+      {
+        "title": "Implement Search Functionality",
+        "description": "Add functionality to search for weather by location.",
+        "codeTemplate": "// Function to handle search form submission\n\n// Event listener for search form\n",
+        "expectedOutput": "JavaScript code that allows users to search for weather by location."
+      },
+      {
+        "title": "Display Current Weather",
+        "description": "Display the current weather conditions for the searched location.",
+        "codeTemplate": "// Function to display current weather\nfunction displayCurrentWeather(data) {\n  // Implement display logic here\n}\n",
+        "expectedOutput": "JavaScript code that displays current weather conditions including temperature, humidity, wind speed, etc."
+      },
+      {
+        "title": "Implement Forecast Display",
+        "description": "Display a 5-day weather forecast for the searched location.",
+        "codeTemplate": "// Function to display weather forecast\nfunction displayForecast(data) {\n  // Implement forecast display logic here\n}\n",
+        "expectedOutput": "JavaScript code that displays a 5-day weather forecast."
+      },
+      {
+        "title": "Add Error Handling",
+        "description": "Implement error handling for API requests and invalid user input.",
+        "codeTemplate": "// Function to handle errors\nfunction handleError(error) {\n  // Implement error handling logic here\n}\n",
+        "expectedOutput": "JavaScript code that handles errors gracefully and provides feedback to the user."
+      }
+    ]
+  },
+  {
+    "id": "python-calculator",
+    "title": "Command Line Calculator",
+    "description": "Build a command line calculator application with Python. Learn about input handling, arithmetic operations, and basic error handling.",
+    "language": "python",
+    "level": "beginner",
+    "duration": 2,
+    "prerequisites": ["python-basics-1", "python-basics-2"],
+    "tags": ["console", "math", "input"],
+    "xpReward": 80,
+    "isLocked": false,
+    "steps": [
+      {
+        "title": "Setup Basic Structure",
+        "description": "Create the basic structure of the calculator program.",
+        "codeTemplate": "def main():\n    # Your code here\n    pass\n\nif __name__ == \"__main__\":\n    main()",
+        "expectedOutput": "A Python script with a main function that runs when the script is executed."
+      },
+      {
+        "title": "Implement Input Handling",
+        "description": "Add code to get user input for numbers and operations.",
+        "codeTemplate": "def get_user_input():\n    # Your code here\n    pass\n\ndef main():\n    # Call get_user_input function\n    pass\n\nif __name__ == \"__main__\":\n    main()",
+        "expectedOutput": "Python code that gets and validates user input for numbers and operations."
+      },
+      {
+        "title": "Implement Basic Operations",
+        "description": "Add functions for addition, subtraction, multiplication, and division.",
+        "codeTemplate": "def add(a, b):\n    # Your code here\n    pass\n\ndef subtract(a, b):\n    # Your code here\n    pass\n\ndef multiply(a, b):\n    # Your code here\n    pass\n\ndef divide(a, b):\n    # Your code here\n    pass\n",
+        "expectedOutput": "Python functions that perform basic arithmetic operations."
+      },
+      {
+        "title": "Implement Operation Selection",
+        "description": "Add code to select the appropriate operation based on user input.",
+        "codeTemplate": "def perform_operation(a, b, operation):\n    # Your code here\n    pass\n",
+        "expectedOutput": "Python code that selects and performs the appropriate operation based on user input."
+      },
+      {
+        "title": "Add Error Handling",
+        "description": "Implement error handling for invalid input and division by zero.",
+        "codeTemplate": "def safe_divide(a, b):\n    # Your code here with try-except\n    pass\n",
+        "expectedOutput": "Python code that handles errors gracefully and provides feedback to the user."
+      },
+      {
+        "title": "Implement Continuous Operation",
+        "description": "Allow the user to perform multiple calculations without restarting the program.",
+        "codeTemplate": "def main():\n    # Your code here with a loop\n    pass\n",
+        "expectedOutput": "Python code that allows the user to perform multiple calculations in a loop until they choose to exit."
+      }
+    ]
+  }
+]
